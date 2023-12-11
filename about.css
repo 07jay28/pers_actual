@@ -28,6 +28,7 @@ body {
     height: auto;
     object-fit: cover;
     z-index: -1;
+    vertical-align: bottom;
 }
 
 /* Black bar for top: TODO: play around with colors */
@@ -37,7 +38,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    border-top: 3.25rem solid black;
+    border-top: 3rem solid black;
 }
 /* Code below is for the text at the top of bar */
 header {
@@ -88,6 +89,11 @@ header ul li a:hover {
     50% { border-color: orange}
 }
 
+.midBar {
+    position: flex;
+    width: 100%;
+    border-top: 2.5em solid black;
+}
 
 section {
     position: absolute;
@@ -112,94 +118,95 @@ section {
 }
 
 /* Text boxes Section */
-
 .Next_Page {
     position: relative;
-    background-color: white(39, 39, 38);
+    background-image: linear-gradient(#513210,#986931);
+    /* background-color:#5e3e17; */
     bottom: 0;
     left: 0;
     width: auto;
     height: auto;
     overflow: hidden;
-    /* padding: 1px; */
+    padding-bottom: 50px
 }
 
-.Next_Page ul{
-    /* float: left; */
-    margin: 0;
-    padding: 0;
-}
-
-.Next_Page li {
+.Next_Page ul {
+    list-style-type: none;
     display: inline-block;
+    justify-content: center;
+    left: 50%;
+    margin-right: -50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Next_Page ul li {
+    display: list-item;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .container {
+    float: auto;
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
+    place-items:center;
+    grid-template-columns: 2fr 1fr 2fr;
+    column-gap: 10px;
 }
 
 .info {
-    /* margin: 225px; */
     position: relative;
     overflow: hidden;
     border-radius: 25px;
-    background: beige;
+    background:	#d6b575;
     padding: 50px;
     width: 300px;
-    height: 200px;
+    height: auto;
 }
 
-#school {
-    /* float: right; */
-    width: 100%;
-    height: 100%;
-}
-
-.intern1 {
-    /* float: right;    */
-    margin: 225px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 25px;
-    background: beige;
-    padding: 50px;
-    width: 300px;
-    height: 200px;
-}
-
-#COE {
-    /* float: left; */
-    width: 35%;
-    height: 35%; 
-}
-
-.intern2 {
-    /* float: left;    */
-    margin: 225px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 25px;
-    background: beige;
-    padding: 50px;
-    width: 300px;
-    height: 200px;
-}
-
-#MSI {
-    /* float: right; */
-    width: 35%;
-    height: 35%;
-}
-
-#name {
-    color: white;
-    font-family: monospace;
+#first {
     float: right;
 }
 
+#sec {
+    float: left;
+}
+
+#third {
+    float: right;
+}
+
+#school {
+    float: left;
+    width: 60%;
+    height: 60%;
+}
+
+#COE {
+    float: right;
+    width: 70%;
+    height: 70%; 
+}
+
+#MSI {
+    float: left;
+    width: 70%;
+    height: 70%;
+}
+
+/* My name at the top of this section */
+#name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 60px;
+    color: black;
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 25px;
+}
+
+/* For the text within boxes */
 #head_info {
     font-family:monospace;
     margin: auto;
@@ -209,6 +216,12 @@ section {
 #text_info {
     font-family: monospace;
     margin: 0 auto;
+}
+
+.botBar {
+    position: flex;
+    width: 100%;
+    border-top: 5em solid black;
 }
 
 #btn {
