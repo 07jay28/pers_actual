@@ -1,0 +1,62 @@
+* {
+    margin: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#top {
+    scrollbar-width: none;
+    overflow-y: scroll;
+    height: inherit;
+}
+
+body {
+    overflow-y: scroll;
+}
+/* Black bar for top: TODO: play around with colors */
+.TopBlackbar {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2.5rem solid black;
+}
+/* Code below is for the text at the top of bar */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: left;
+    z-index: 999999;
+}
+
+header ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+header ul li {
+    list-style: none;
+    padding-top: 7.5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: monospace;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+header ul li a:hover {
+    background: white;
+    color: black;
+}

@@ -7,13 +7,9 @@ html {
 }
 
 #top {
-    /* -ms-overflow-style: none;*/
     scrollbar-width: none;
     overflow-y: scroll;
     height: inherit;
-    /* overflow:hidden; */
-    /* display: flexbox;
-    align-content: flex-end; */
 }
 
 body {
@@ -38,7 +34,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    border-top: 3rem solid black;
+    border-top: 2.5rem solid black;
 }
 /* Code below is for the text at the top of bar */
 header {
@@ -46,36 +42,36 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: left;
     z-index: 999999;
 }
 
 header ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     overflow: hidden;
+    margin: 0;
 }
-/* 
+
 header ul li {
     list-style: none;
-    padding-top: 15px;
-    z-index: 10000;
+    padding-top: 7.5px;
 }
 
 header ul li a {
     text-decoration: none;
-    padding: 4px 15px;
+    font-family: monospace;
+    padding: 4px 10px;
     color: white;
-    border-radius: 20px;
+    border-radius: 15px;
+    font-size: 17px;
 }
 
 header ul li a:hover {
     background: white;
     color: black;
-} */
+}
 
 /* TypeWriter effect */
 
@@ -120,7 +116,8 @@ section {
 /* Text boxes Section */
 .Next_Page {
     position: relative;
-    background-image: linear-gradient(#513210,#986931);
+    /* background-image: linear-gradient(#513210,#986931); */
+    background-image: linear-gradient(#A27749,#644626);
     /* background-color:#5e3e17; */
     bottom: 0;
     left: 0;
@@ -160,7 +157,8 @@ section {
     border-radius: 25px;
     background:	#d6b575;
     padding: 50px;
-    width: 300px;
+    min-width: 250px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -204,6 +202,13 @@ section {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 25px;
+}
+
+#me {
+    margin: 0 auto;
+    max-width: 40%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* For the text within boxes */
