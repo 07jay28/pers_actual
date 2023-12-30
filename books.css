@@ -73,6 +73,20 @@ body {
     padding-bottom: 4px;
 }
 
+.descr {
+    background-color: black;
+    /* background-image: radial-gradient(#553311, #5e3e17,#36220b); */
+}
+
+#desc {
+    color: wheat;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 40%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /* Code below is for the background image */
 .Back_IMG img {
     position: relative;
@@ -135,10 +149,21 @@ header ul li a:hover {
 
 section {
     position: absolute;
-    font-size: large;
+    font-size: x-large;
     top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%,-50%);
     color: #dfd8c8;
 }
+
+.quote {
+    padding-top: 10px;
+    font-size: medium;
+    text-align: right;
+}
+
+desc, a {
+    color: inherit;
+    text-decoration: underline;
+   }
