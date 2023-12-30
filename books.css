@@ -15,6 +15,78 @@ html {
 body {
     overflow-y: scroll;
 }
+
+.midBar {
+    position: flex;
+    width: 100%;
+    border-top: 2.5em solid black;
+}
+
+.shelfBar {
+    position: flex;
+    width: 100%;
+    border-top: 25px solid #332211;
+}
+
+.bookshelf {
+    /* background-color:#553311; */
+    border: 25px solid 	#332211;
+    background-image: radial-gradient(#553311, #5e3e17,#36220b);
+}
+
+.bookpic {
+    border: 5px solid black;
+}
+
+.col {
+    display: inline-block;
+    float: none;
+    width: 33.33%;
+    /* padding: 3px; */
+    /* margin-right:-4px; */
+    
+}
+
+.row {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.genre {
+    display: inline-block;
+    color: #c5832b;
+    background-color:  #c3b091;
+    /* border: 3px solid black; */
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+}
+
+/* Code below is for the background image */
+.Back_IMG img {
+    position: relative;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    vertical-align: bottom;
+    filter: brightness(0.45) saturate(1);
+    /* opacity: 0.9; */
+}
+
 /* Black bar for top: TODO: play around with colors */
 .TopBlackbar {
     overflow: hidden;
@@ -59,4 +131,14 @@ header ul li a {
 header ul li a:hover {
     background: white;
     color: black;
+}
+
+section {
+    position: absolute;
+    font-size: large;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    color: #dfd8c8;
 }
