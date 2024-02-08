@@ -31,12 +31,11 @@ h1 {
     right: 0%;
     bottom: 0%;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    background-image: cover;
     z-index: -1;
     vertical-align: bottom;
     filter: brightness(0.8);
-    /* opacity: 0.9; */
 }
 
 /* Black bar for top: TODO: play around with colors */
@@ -53,6 +52,7 @@ h1 {
     position: flex;
     width: 100%;
     border-top: 2.5em solid black;
+    
 }
 
 /* Code below is for the text at the top of bar */
