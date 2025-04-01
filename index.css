@@ -30,7 +30,7 @@ body {
 /* Black bar for top: TODO: play around with colors */
 .TopBlackbar {
     overflow: hidden;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -158,7 +158,7 @@ section {
     background:	#d6b575;
     padding: 50px;
     min-width: 250px;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
 }
 
@@ -171,6 +171,10 @@ section {
 }
 
 #third {
+    float: right;
+}
+
+#fourth {
     float: right;
 }
 
@@ -188,8 +192,14 @@ section {
 
 #MSI {
     float: left;
-    width: 70%;
-    height: 70%;
+    width: 85%;
+    height: 85%;
+}
+
+#MSIBLUE {
+    float: left;
+    width: 85%;
+    height: 85%;
 }
 
 /* My name at the top of this section */
@@ -198,7 +208,7 @@ section {
     padding-bottom: 30px;
     font-size: 60px;
     color: black;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Garamond';
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 25px;
