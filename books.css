@@ -87,6 +87,19 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#bookReview {
+    color: wheat;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 40%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
 /* Code below is for the background image */
 .Back_IMG img {
     position: relative;

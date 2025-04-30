@@ -1,0 +1,118 @@
+* {
+    margin: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#top {
+    scrollbar-width: none;
+    overflow-y: scroll;
+    height: inherit;
+    z-index: 99999;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+/* Code below is for the background image */
+.Back_IMG img {
+    position: relative;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    vertical-align: bottom;
+    filter: brightness(0.45) saturate(1);
+    /* opacity: 0.9; */
+}
+
+.midBar {
+    position: flex;
+    width: 100%;
+    border-top: 2.5em solid black;
+}
+
+/* Black bar for top: TODO: play around with colors */
+.TopBlackbar {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2.5rem solid black;
+}
+/* Code below is for the text at the top of bar */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: left;
+    z-index: 999999;
+}
+
+header ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+header ul li {
+    list-style: none;
+    padding-top: 7.5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: monospace;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+header ul li a:hover {
+    background: white;
+    color: black;
+}
+
+section {
+    position: absolute;
+    font-size: x-large;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    color: #dfd8c8;
+}
+
+/* Text boxes Section */
+.myReview {
+    position: relative;
+    /* background-image: linear-gradient(#513210,#986931); */
+    /* background-image: linear-gradient(#A27749,#644626); */
+    background-color: blanchedalmond;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: -1;
+    padding-bottom: 50px;
+}
+
+#bookImage {
+    float: left;
+    margin-right: 1.5em;
+}
+
+#revw {
+    overflow: hidden;
+}
